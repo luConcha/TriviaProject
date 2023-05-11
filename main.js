@@ -78,7 +78,7 @@ function showTrivia(id) {
 }
 
 function next() {
-  if (questionID < 5) {
+  if (questionID < 10) {
     showTrivia(questionID);
   } else {
     console.log(score);
@@ -132,7 +132,7 @@ document.querySelector('#btn_answer3').onclick = () => {
 };
 
 function getTrivia() {
-  let url = 'https://opentdb.com/api.php?amount=5';
+  let url = 'https://opentdb.com/api.php?amount=10';
   let difficulty = document.querySelector('#difficulty').value;
   let category = document.querySelector('#category').value;
   url = `${url}&category=${category}&difficulty=${difficulty}&type=multiple`;
