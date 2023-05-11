@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="header">
+        <div class="headerContainer">
+          <img src="images/trivia_header.png" alt="" class="header" />
+        </div>
+      </section>
+      <section class="settings">
+        <section class="diffSection">
+          <label>Dificultad</label>
+          <select id="difficulty" class="difficulty">
+            <option value="easy">Facil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Dificil</option>
+          </select>
+        </section>
+        <section class="categorySection">
+          <label>Categorias</label>
+          <select id="category" class="category"></select>
+        </section>
+
+        <button type="submit" id="btnStartTrivia" class="btn btnStartTrivia">
+          Empezar Trivia
+        </button>
+      </section>
+
+      <section class="trivia" id="triviaSection">
+        <section class="score" id="score">
+          <p id="score_txt"></p>
+        </section>
+        <section class="question" id="question">
+          <p id="question_txt"></p>
+        </section>
+        <section class="answers" id="answers">
+          <div class="answerslist">
+            <button
+              class="btn btnAnswer"
+              type="submit"
+              id="btn_answer0"
+            ></button>
+            <button
+              class="btn btnAnswer"
+              type="submit"
+              id="btn_answer1"
+            ></button>
+            <button
+              class="btn btnAnswer"
+              type="submit"
+              id="btn_answer2"
+            ></button>
+            <button
+              class="btn btnAnswer"
+              type="submit"
+              id="btn_answer3"
+            ></button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
